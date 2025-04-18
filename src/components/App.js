@@ -1,15 +1,18 @@
-
 import React from "react";
-import Tooltip from './Tooltip.js'
-import './../styles/App.css';
+import Tooltip from "./Tooltip";
 
 const App = () => {
   return (
     <>
-      <Tooltip text={<h2 className="tooltiptext">This is a tooltip</h2>} children={<h2 className="tooltip">Hover over me</h2>}/>
-      <Tooltip text={<p className="tooltiptext">This is another tooltip</p>} children={<p className="tooltip">Hover over me to see another tooltip</p>}/>
+      <Tooltip text="This is a tooltip">
+        <h2>Hover over me</h2>
+      </Tooltip>
+      
+      <Tooltip text="This is another tooltip">
+        <p>Hover over me to see another tooltip</p>
+      </Tooltip>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
