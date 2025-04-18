@@ -15,8 +15,8 @@ const Tooltip = ({ text, children }) => {
   return (
     <div
       className = "container"
-      onMouseOver={handleMouseOver}
-      // onMouseOut={handleMouseOut}
+      onMouseEnter={handleMouseOver}
+      onMouseLeave={handleMouseOut}
     >
       {children}
       {isHovered && <div>{text}</div>}
