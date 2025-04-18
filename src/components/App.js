@@ -5,10 +5,10 @@ import './../styles/App.css';
 
 const App = () => {
   return (
-    <div>
-      <Tooltip text={<h2>This is a tooltip</h2>} children={<h2>Hover over me</h2>}/>
-      <Tooltip text={<p>This is another tooltip</p>} children={<p>Hover over me to see another tooltip</p>}/>
-    </div>
+    <>
+      <Tooltip text={<h2 className="tooltiptext">This is a tooltip</h2>} children={<h2 className="tooltip">Hover over me</h2>}/>
+      <Tooltip text={<p className="tooltiptext">This is another tooltip</p>} children={<p className="tooltip">Hover over me to see another tooltip</p>}/>
+    </>
   )
 }
 
